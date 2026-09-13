@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ==========================================
+     Company: 0DLLC
+     Script: Room Key
+     Version: 1.0
+     Type: Block Pause / Key Definition
+     Description:
+     Defines the Room Key sequence.
+     The block function occurs first,
+     followed by the A + F key combination.
+     ========================================== -->
+
+<RoomKey>
+
+    <BusinessInfo>
+        <Company>0DLLC</Company>
+        <Product>Room Key</Product>
+        <Version>1.0</Version>
+    </BusinessInfo>
+
+    <Definition>
+        <Name>Room Key</Name>
+        <Function>Block Pause</Function>
+
+        <Sequence>
+            <Step order="1">
+                <Action>Block</Action>
+                <State>Pause</State>
+            </Step>
+
+            <Step order="2">
+                <Action>KeyCombination</Action>
+                <Key>A</Key>
+                <Key>F</Key>
+            </Step>
+
+            <Step order="3">
+                <Action>Continue</Action>
+            </Step>
+        </Sequence>
+    </Definition>
+
+</RoomKey>
